@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC4 Encryption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h2>RC4 Encryption</h2>
+  <form id="encryptionForm">
+
+    <input type="text" id="plaintext" name="plaintext" required placeholder="Plaintext or Binary"><br>
+
+    <input type="number" id="key0" name="k0" required placeholder="K0">
+
+    <input type="number" id="key1" name="k1" required placeholder="K1">
+
+    <button type="button" onclick="encrypt()">Encrypt</button><br><br>
+
+    <label for="ciphertext">Ciphertext:</label><br>
+
+    <input type="text" id="ciphertext" readonly><br>
+    
+    <div id="output"></div>
+
+
+  </form>
+
+<script src="script.js"></script>
+</body>
+
+</html>
